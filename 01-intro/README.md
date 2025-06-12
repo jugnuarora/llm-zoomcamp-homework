@@ -45,5 +45,27 @@ __Step 12:__ To check the questions for each returned response use `response['hi
 
 __Answer 4: How do I copy files from a different folder into docker container’s working directory?__
 
+__Step 13:__ Build the context using the returned searched documents
 
+__Step 14:__ Build the prompt_template.
 
+__Step 15:__ format the prompt_template to create the actual prompt
+
+__Step 16:__ len(prompt)
+
+__Answer 5: 1446__
+
+__Step 17:__ Import tiktoken and encode the prompt generated. Then use len() to find the number of tokens generated.
+
+__Answer 6: 320__
+
+__Step 18:__ I have saved OPENAI_API_KEY in .env file and retrieved it using dotenv module.
+
+__Step 19:__ Create 3 functions
+    (a) Get the search results from the documents
+    (b) Build the prompt
+    (c) Send the prompt to llm to retrieve the answer
+
+__Step 20:__ Create a function that encompasses all the above 3. And call this function with the query.
+
+__Step 21:__ We are sending 320 tokens and recieving 62 tokens thus the total cost is $2.53
